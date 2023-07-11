@@ -73,7 +73,7 @@ tfidf = TfidfVectorizer(stop_words='english')
 
 # remplaza valores NAN con str vacio
 movies_df['overview'] = movies_df['overview'].fillna('')
-muestra = movies_df["overview"].head(10000)
+muestra = movies_df["overview"].head(5000)
 
 
 # Construir la matriz TF-IDF necesaria ajustando y transformando los datos.
